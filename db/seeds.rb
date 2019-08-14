@@ -5,3 +5,21 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#
+Restaurant.destroy_all
+
+Restaurant.create(
+    name: 'pitaya',
+    address: '6 rue machin',
+    category: 'chinese',
+    phone_number: '0849048994')
+
+
+Restaurant.create(
+    name: 'mcdo',
+    address: '6 rue machine',
+    category: 'belgian',
+    phone_number: '0845048994')
+
+puts "seeded"
